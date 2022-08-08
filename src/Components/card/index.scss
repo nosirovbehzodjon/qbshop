@@ -1,0 +1,66 @@
+@import "../../Assets/Styles/mian_color";
+.card__container {
+    background: linear-gradient(45deg,rgb(213, 165, 165),rgb(187, 180, 180));
+    position: relative;
+    height: 418px;
+    width: 269px;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    .img__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    button {
+        position: absolute;
+        bottom: 1rem;
+        cursor: pointer;
+        border: none;
+    }
+    .cart {
+        height: 36px;
+        width: 52px;
+        right: 2rem;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: white;
+        color: $main-black;
+    }
+    .detail {
+        height: 36px;
+        width: 138px;
+        left: 2rem;
+        color: white;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: $main-black;
+        letter-spacing: 2px;
+        padding: 8px 30px 10px 32px;
+    }
+}
+.small{
+    height: 380px;
+    width: 220px;
+    .img__container{
+        height: 240px;
+    }
+    .cart{
+        right: .5rem;
+    }
+    .detail{
+        left: .5rem;
+    }
+}

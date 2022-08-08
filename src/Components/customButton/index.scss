@@ -1,0 +1,71 @@
+@import "../../Assets/Styles/mian_color";
+
+.button-main {
+    background-color: $main-black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 12px 37px 14px 38px;
+    letter-spacing: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    transition: 0.5s all;
+    cursor: pointer;
+    &:hover {
+        background-color: #211f1cce;
+    }
+}
+
+.button-second {
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    background-color: white;
+    padding: 10px 37px 12px 38px;
+    color: $main-black;
+    &:hover {
+        background-color: rgba($border-color, $alpha: 0.3);
+    }
+}
+
+.button-small {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    padding: 8px 28px 10px 30px;
+}
+
+.border-0 {
+    border-radius: 0;
+}
+.border-10 {
+    border-radius: 10px;
+}
+.border-50 {
+    border-radius: 50px;
+}
+.icon {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    padding: 8px 28px 10px 30px;
+    height: 36px;
+    width: 52px;
+    border-radius: 10px;
+    background-color: white;
+    color: $main-black;
+}
+@media (max-width: 700px) {
+    .button-main {
+        font-size: 1.2rem;
+        letter-spacing: 4px;
+        padding: 8px 28px 10px 30px;
+    }
+    .button-second {
+        box-sizing: border-box;
+        border: 2px solid $border-color;
+        background-color: white;
+        padding: 6px 28px 8px 30px;
+        color: $main-black;
+        &:hover {
+            background-color: rgba($border-color, $alpha: 0.3);
+        }
+    }
+}

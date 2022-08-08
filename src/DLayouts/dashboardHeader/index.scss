@@ -1,0 +1,17 @@
+.dheader {
+    height: 70px;
+    border-bottom: 2px solid rgba(172, 172, 172, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+    .d__toggle {
+        position: absolute;
+        left: 2rem;
+        top: 35px;
+        color: black;
+        font-size: 2rem;
+        // display: none;
+    }
+}

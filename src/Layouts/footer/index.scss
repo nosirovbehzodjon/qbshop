@@ -1,0 +1,84 @@
+@import "../../Assets/Styles/mian_color";
+.container__footer {
+    // height: 160px;
+    height: 222.36923217773438px;
+    width: 100%;
+    background-color: $footer-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .grid__item {
+        padding: 0px 80px;
+        &:nth-child(1) {
+            align-items: flex-start;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        h1,
+        p {
+            color: #ffffff;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        ul {
+            height: 40px;
+            width: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li {
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $icon-color;
+                a {
+                    background-color: $icon-back;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    transition: all 0.1s;
+                    font-size: 20px;
+                    border-radius: 20px;
+                    &:hover {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+// .small{
+//     height: 160px;
+//     // height: 222.36923217773438px;
+//     width: 100%;
+//     background-color: $footer-color;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+// }
+@media (max-width: 870px) {
+    .container__footer {
+        grid-template-columns: 1fr;
+        .grid__item {
+            align-items: center;
+            &:nth-child(1) {
+                align-items: flex-start;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .container__footer {
+        .grid__item {
+            align-items: center;
+            padding: 0px 10px;
+            &:nth-child(1) {
+                align-items: flex-start;
+            }
+        }
+    }
+}

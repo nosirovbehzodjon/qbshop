@@ -1,0 +1,10 @@
+.cart_container {
+    padding: 80px;
+}
+
+@media (max-width: 900px) {
+    .cart_container {
+        padding: 80px;
+        padding: 20px;
+    }
+}

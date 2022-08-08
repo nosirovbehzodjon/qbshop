@@ -1,0 +1,98 @@
+.check__section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .check__container {
+        width: 550px;
+        height: 100%;
+        padding: 0.8rem 3rem;
+        background-color: rgba(248, 248, 248, 1);
+        .main__container {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .check__name {
+                width: 15rem;
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+            .check__point {
+                display: flex;
+                justify-content: center;
+                font-weight: 900;
+                align-items: center;
+                font-size: 1.5rem;
+                width: 1rem;
+            }
+            .check__price {
+                display: flex;
+                justify-content: flex-start;
+                font-weight: 900;
+                align-items: center;
+                font-size: 1.5rem;
+                width: 6rem;
+            }
+        }
+    }
+    .button__check {
+        display: flex;
+        width: 550px;
+        margin-top: 1rem;
+        justify-content: flex-end;
+        align-items: center;
+        button {
+            &:last-child {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .check__section__container {
+        .check__container {
+            padding: 0.2rem 1rem;
+            width: 350px;
+            .main__container {
+                .check__name {
+                    width: 6rem;
+                    font-size: 1rem;
+                }
+                .check__point {
+                    font-size: 1rem;
+                }
+                .check__price {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .button__check {
+            width: 460px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .check__section__container {
+        .check__container {
+            width: 350px;
+            height: 100%;
+        }
+        .button__check {
+            width: 350px;
+        }
+    }
+}
+@media (max-width: 430px) {
+    .check__section__container {
+        .check__container {
+            width: 250px;
+        }
+        .button__check {
+            flex-direction: column;
+            align-items: flex-end;
+            button {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@import "../../Assets/Styles/mian_color";
+
+.costumer__container {
+    padding: 80px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .img__container {
+            height: 420px;
+            img {
+                object-fit: cover;
+                background-color: red;
+                height: 420px;
+                min-width: 300px;
+            }
+        }
+        .text__container {
+            padding: 2rem;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-family: Lato, sans-serif;
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 48px;
+                letter-spacing: 0em;
+                mask-border: 0.5rem;
+                margin-top: 10px;
+                text-align: left;
+            }
+            p {
+                font-family: Roboto, sans-serif;
+                font-size: 22px;
+                margin-top: 1rem;
+                font-weight: 400;
+                line-height: 40px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $border-color;
+            }
+            h2 {
+                font-family: Roboto, sans-serif;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 29px;
+                letter-spacing: 0em;
+                margin-bottom: 0.5rem;
+                text-align: left;
+            }
+            h3 {
+                font-family: Roboto;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $border-color;
+            }
+        }
+    }
+}
+@media (max-width: 1125px) {
+    .costumer__container {
+        padding: 20px;
+        .wrapper {
+            .text__container {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .costumer__container {
+        .wrapper {
+            flex-direction: column;
+            .img__container {
+                overflow: hidden;
+                height: 10rem;
+                width: 10rem;
+                border-radius: 5rem;
+                img {
+                    object-fit: cover;
+                }
+            }
+            .text__container {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .costumer__container {
+        .wrapper {
+            .text__container {
+                height: 100%;
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

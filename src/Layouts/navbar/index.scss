@@ -1,0 +1,183 @@
+@import "../../Assets/Styles/mian_color";
+
+.navbar {
+    display: flex;
+    height: 115px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    position: relative;
+    background-color: $navbar-color;
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 14rem;
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    .container__ul {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 430px;
+            .nav__item {
+                font-size: 1.2rem;
+                font-weight: 800;
+                a {
+                    transition: all 0.5s;
+                }
+                a:hover {
+                    color: $border-color;
+                }
+            }
+        }
+        .login_cart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 14rem;
+            .cart-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                width: 37px;
+                .cart {
+                    position: relative;
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 30px;
+                        width: 30px;
+                        color: white;
+                        position: absolute;
+                        right: -20px;
+                        top: -20px;
+                        border-radius: 50%;
+                        font-weight: 900;
+                        background-color: #ff6565;
+                    }
+                }
+            }
+        }
+    }
+
+    .responsive__btn {
+        background-color: $main-black;
+        color: white;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 115px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 3rem;
+        display: none;
+    }
+}
+.underline {
+    color: $link-color;
+    transition: all 0.5s;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 2px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: $main-black;
+    }
+}
+@media (max-width: 1090px) {
+    .navbar {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 1120px) {
+    .navbar {
+        .logo {
+            font-size: 2rem;
+            width: 12rem;
+        }
+        .container__ul {
+            background-color: white;
+            padding: 2rem 0;
+            .nav__list {
+                width: 300px;
+            }
+            .login_cart {
+                width: 12rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        height: 90px;
+        .logo {
+            font-size: 2rem;
+            width: 12rem;
+        }
+        .container__ul {
+            transform: translateX(-100%);
+            box-shadow: -5px 5px 10px 0px grey;
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            top: 90px;
+            z-index: 100;
+            transition: transform 0.5s;
+            left: 0;
+            align-items: flex-start;
+            .nav__list {
+                flex-direction: column;
+                align-items: flex-start;
+                height: 8rem;
+                width: 200px;
+                padding-left: 2rem;
+                .nav__item--none {
+                    display: none;
+                }
+            }
+            .login_cart {
+                margin-top: 5rem;
+                width: 14rem;
+                padding-left: 2rem;
+            }
+        }
+        .responsive__btn {
+            display: flex;
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height: 60px;
+        .logo {
+            font-size: 1.6rem;
+            width: 12rem;
+        }
+        .container__ul {
+            top: 60px;
+        }
+        .responsive__btn {
+            display: flex;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

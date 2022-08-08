@@ -1,0 +1,30 @@
+.container__ourpaterns {
+    padding: 120px;
+    .paterns__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .patern {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+            width: 15rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .container__ourpaterns {
+        padding: 20px;
+    }
+}
+@media (max-width: 540px) {
+    .container__ourpaterns {
+        .paterns__list{
+            justify-content: center;
+        }
+    }
+}
